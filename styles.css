@@ -1,0 +1,84 @@
+*{
+    border: solid;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    
+    
+}
+
+.main-page{
+    height: 96%;
+    display:grid;
+    grid-template-columns: 0.5fr 5fr 1fr;
+    grid-template-rows: 1fr 6fr;
+}
+#sidebar{
+    background-color: black;
+    height:0;
+    width:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom-right-radius: 25px;
+    transition: all 0.5s;
+    overflow:hidden;
+    position:fixed;
+    z-index: 2;
+}
+.sidebar-buttons{
+    width:100%;
+    height:14%;
+    font-size: 24px;
+}
+.menu{
+    width:80%;
+}
+#sidebar-close, #sidebar-open{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 24px;
+}
+#sidebar-close:hover, #sidebar-open:hover{
+    transform: rotate(360deg);
+}
+#sidebar-open, #search-bar-outline{
+    align-self: center;
+    justify-self: center;
+}
+
+#search-bar-outline{
+    height: 50px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+}
+#search-bar{
+    height:100%;
+    width:98%;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.user{
+    display:flex;   
+    justify-content: center;
+    align-items: center;
+}
+#user-profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 24px;
+}
+#user-profile:hover{
+    transform: rotate(360deg) scale(1.3);
+}
